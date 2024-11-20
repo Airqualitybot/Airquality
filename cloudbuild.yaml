@@ -75,7 +75,7 @@ jobs:
           echo "ENDPOINT_NAME=$ENDPOINT_NAME" >> $GITHUB_ENV
           echo "Retrieved or created ENDPOINT_NAME: $ENDPOINT_NAME"
 
-      # Step 8: Deploy Model to Endpoint
+      # Step 8: Deploy Model to VertexAI Endpoint
       - name: Deploy Model to Endpoint
         run: |
           echo "Deploying model ${{ env.MODEL_ID }} to endpoint ${{ env.ENDPOINT_NAME }}..."
